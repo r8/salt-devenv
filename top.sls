@@ -4,6 +4,7 @@ base:
     - java
 
     - zsh
+    - dotfiles
 
     - touchpad
     - keyboard 
