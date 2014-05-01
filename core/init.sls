@@ -3,4 +3,6 @@ packages:
     - pkgs:
       - vim
       - mc
+      - git 
+
 
