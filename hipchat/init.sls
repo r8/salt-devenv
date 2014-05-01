@@ -12,6 +12,7 @@ hipchat_key:
     - name: |
         wget -O - https://www.hipchat.com/keys/hipchat-linux.key | apt-key add -
         apt-get update
+    - unless: dpkg -s hipchat 
     - require_in:
       - pkg: hipchat
 
