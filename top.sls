@@ -5,3 +5,5 @@ base:
     - touchpad
 
     - hipchat
+    - skype
+
