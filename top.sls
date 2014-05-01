@@ -8,6 +8,7 @@ base:
 
     - touchpad
     - keyboard 
+    - openbox
 
     - hipchat
     - skype
