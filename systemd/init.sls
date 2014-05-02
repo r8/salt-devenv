@@ -1,6 +1,12 @@
 systemd:
   pkg.installed
 
+remove_sysvinit:
+  cmd.run:
+    - name: 'export LANG=en_us.UTF-8 && yes "Yes, do as I say!" | apt-get remove -y --force-yes sysvinit'
+    - require:
+      - pkg: systemd
+
 systemd-sysv:
   pkg.installed:
     - require:

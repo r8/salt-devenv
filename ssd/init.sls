@@ -1,3 +1,6 @@
+include:
+  - rclocal
+
 /etc/fstab:
   file.replace:
     - pattern: 'errors=remount-ro '
@@ -26,4 +29,11 @@ update_grub:
     - name: 'update-grub'
     - require:
       - file: /etc/grub.d/10_linux
+
+/etc/rc.local.d/vtrim.sh:
+  file.managed:
+    - source: salt://ssd/files/vtrim.sh
+    - user: root
+    - group: root
+    - mode: 755
 

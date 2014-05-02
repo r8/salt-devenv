@@ -4,6 +4,7 @@ base:
     - java
     - ssd
     - systemd
+    - rclocal
 
     - zsh
     - dotfiles
