@@ -5,7 +5,7 @@ keyboard-switch:
     - marker_end: "# BLOCK BOTTOM : salt managed zone : keyboard switch"
     - content: |
         setxkbmap -layout "us,ru,ua" -option "grp:caps_toggle" &
-        fbxkb &
+        (sleep 5s && fbxkb) &
     - show_changes: True
     - append_if_not_found: True 
 
