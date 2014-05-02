@@ -8,6 +8,7 @@ base:
 
     - zsh
     - dotfiles
+    - wallpaper
 
     - touchpad
     - keyboard 
