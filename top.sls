@@ -17,3 +17,4 @@ base:
     - hipchat
     - skype
 
+    - dev
