@@ -2,6 +2,7 @@ base:
   '*':
     - core 
     - java
+    - ssd
 
     - zsh
     - dotfiles
