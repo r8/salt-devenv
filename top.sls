@@ -17,4 +17,6 @@ base:
     - hipchat
     - skype
 
-    - sublime-text 
+    - sublime-text
+    - phpstorm
+
