@@ -19,4 +19,5 @@ base:
 
     - sublime-text
     - phpstorm
+    - vagrant
 
