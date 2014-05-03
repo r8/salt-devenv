@@ -65,3 +65,31 @@ dev_fonts:
     - user: r8
     - group: r8
 
+sublime_menuxml:
+  file.replace:
+    - name: /home/r8/.config/openbox/menu.xml
+    - pattern: 'geany'
+    - repl: 'subl'
+
+sublime_menuxml_title:
+  file.replace:
+    - name: /home/r8/.config/openbox/menu.xml
+    - pattern: 'Geany Text Editor'
+    - repl: 'Sublime Text Editor'
+    - require:
+      - file: sublime_menuxml
+
+sublime_rcxml:
+  file.replace:
+    - name: /home/r8/.config/openbox/rc.xml
+    - pattern: 'geany'
+    - repl: 'subl'
+    - require:
+      - file: sublime_menuxml
+
+sublime_reconfigure_openbox:
+  cmd.run:
+    - name: killall -USR1 openbox
+    - require:
+      - file: sublime_rcxml
+
