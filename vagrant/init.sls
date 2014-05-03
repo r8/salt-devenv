@@ -1,6 +1,6 @@
 /etc/apt/sources.list.d/virtualbox.list:
   file.managed:
-    - source: salt://virtualbox/files/virtualbox.list
+    - source: salt://vagrant/files/virtualbox.list
     - user: root
     - group: root
     - mode: 644
