@@ -17,4 +17,4 @@ base:
     - hipchat
     - skype
 
-    - dev
+    - sublime-text 

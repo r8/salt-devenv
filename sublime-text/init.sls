@@ -1,12 +1,6 @@
-dev-packages:
-  pkg.installed:
-    - pkgs:
-      - git
-      - php5-cli 
-
 /etc/apt/sources.list.d/webupd8team-sublime-text-3.list:
   file.managed:
-    - source: salt://dev/files/webupd8team-sublime-text-3.list
+    - source: salt://sublime-text/files/webupd8team-sublime-text-3.list
     - user: root
     - group: root
     - mode: 644
@@ -27,14 +21,14 @@ sublime-text-installer:
 
 "/home/r8/.fonts/DejaVu Sans Mono Bold for Powerline.ttf":
   file.managed:
-    - source: "salt://dev/files/fonts/DejaVu Sans Mono Bold for Powerline.ttf"
+    - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Bold for Powerline.ttf"
     - user: r8
     - group: r8
     - mode: 600
 
 "/home/r8/.fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf":
   file.managed:
-    - source: "salt://dev/files/fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf"
+    - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf"
     - user: r8
     - group: r8
     - mode: 600
@@ -43,7 +37,7 @@ sublime-text-installer:
 
 "/home/r8/.fonts/DejaVu Sans Mono for Powerline.ttf":
   file.managed:
-    - source: "salt://dev/files/fonts/DejaVu Sans Mono for Powerline.ttf"
+    - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono for Powerline.ttf"
     - user: r8
     - group: r8
     - mode: 600
@@ -52,7 +46,7 @@ sublime-text-installer:
 
 "/home/r8/.fonts/DejaVu Sans Mono Oblique for Powerline.ttf":
   file.managed:
-    - source: "salt://dev/files/fonts/DejaVu Sans Mono Oblique for Powerline.ttf"
+    - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Oblique for Powerline.ttf"
     - user: r8
     - group: r8
     - mode: 600
@@ -64,4 +58,10 @@ dev_fonts:
     - name: "fc-cache -vf /home/r8/.fonts" 
     - require:
       - file: "/home/r8/.fonts/DejaVu Sans Mono Oblique for Powerline.ttf"
+
+/home/r8/.config/sublime-text-3:
+  file.recurse:
+    - source: salt://sublime-text/files/sublime-text-3
+    - user: r8
+    - group: r8
 

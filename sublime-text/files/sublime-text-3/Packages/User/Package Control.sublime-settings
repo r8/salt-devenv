@@ -1,0 +1,26 @@
+{
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"DocBlockr",
+		"EasyDiff",
+		"EditorConfig",
+		"Emmet",
+		"FindKeyConflicts",
+		"Grunt",
+		"Keymaps",
+		"MarkdownEditing",
+		"Origami",
+		"SFTP",
+		"SideBarEnhancements",
+		"sublime-github",
+		"SublimeCodeIntel",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SVN",
+		"Theme - Soda",
+		"VCS Gutter",
+		"Xdebug Client"
+	]
+}
