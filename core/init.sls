@@ -5,6 +5,7 @@ packages:
       - mc
       - git
       - php5-cli
+      - stellarium
 
 locales:
   pkg.installed
