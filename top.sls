@@ -5,6 +5,7 @@ base:
     - ssd
     - systemd
     - rclocal
+    - ruby
 
     - zsh
     - dotfiles

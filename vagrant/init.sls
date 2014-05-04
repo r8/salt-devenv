@@ -27,3 +27,9 @@ vagrant:
         apt-get -f install
     - unless: dpkg -s vagrant
 
+vagrant_vbguest_plugin:
+  cmd.run:
+    - name: "vagrant plugin install vagrant-vbguest"
+    - user: r8
+
+
