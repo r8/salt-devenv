@@ -5,7 +5,7 @@
     - group: root
     - mode: 644
     - require_in:
-      - pkg: virtualbox-4.3 
+      - pkg: virtualbox-4.2 
 
 virtualbox_key:
   cmd.run:
@@ -26,10 +26,4 @@ vagrant:
         dpkg -i /tmp/vagrant.deb
         apt-get -f install
     - unless: dpkg -s vagrant
-
-vagrant_vbguest_plugin:
-  cmd.run:
-    - name: "vagrant plugin install vagrant-vbguest"
-    - user: r8
-
 

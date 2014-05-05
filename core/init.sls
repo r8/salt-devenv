@@ -6,6 +6,9 @@ packages:
       - git
       - php5-cli
       - stellarium
+      - meld
+      - nfs-kernel-server
+      - nfs-common
 
 locales:
   pkg.installed
