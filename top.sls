@@ -6,6 +6,7 @@ base:
     - systemd
     - rclocal
     - ruby
+    - wine
 
     - zsh
     - dotfiles
@@ -21,4 +22,5 @@ base:
     - sublime-text
     - phpstorm
     - vagrant
+    - clementine
 

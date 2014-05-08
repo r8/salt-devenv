@@ -1,0 +1,3 @@
+clementine:
+  pkg.installed
+
