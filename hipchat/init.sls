@@ -26,7 +26,7 @@ hipchat-autostart:
     - marker_end: "# BLOCK BOTTOM : salt managed zone : hipchat autostart"
     - content: |
         # Autostart hipchat
-        (sleep 10s && hipchat) &
+        (sleep 25s && hipchat) &
     - show_changes: True
     - append_if_not_found: True 
 

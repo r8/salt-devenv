@@ -7,6 +7,7 @@ base:
     - rclocal
     - ruby
     - wine
+    - r
 
     - zsh
     - dotfiles
