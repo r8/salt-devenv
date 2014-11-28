@@ -22,6 +22,7 @@ base:
 
     - sublime-text
     - phpstorm
+    - idea 
     - vagrant
     - clementine
 
