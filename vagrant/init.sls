@@ -22,7 +22,7 @@ virtualbox-4.3:
 vagrant:
   cmd.run:
     - name: |
-        wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.4_x86_64.deb 
+        wget -O /tmp/vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
         dpkg -i /tmp/vagrant.deb
         apt-get -f install
     - unless: dpkg -s vagrant
