@@ -5,7 +5,7 @@ include:
 homestead_box:
   cmd.run: 
     - name: |
-        vagrant box add laravel/homestead
+        vagrant box add --provider virtualbox laravel/homestead
 
 homestead_install:
   cmd.run: 
