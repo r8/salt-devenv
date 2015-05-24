@@ -3,6 +3,8 @@ packages:
     - pkgs:
       - vim
       - mc
+      - screen
+      - tmux
       - git
       - php5-cli
       - meld
