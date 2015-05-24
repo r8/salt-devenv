@@ -11,7 +11,6 @@ base:
     - dotfiles
     - appearance 
 
-    - touchpad
     - keyboard 
     - openbox
 
