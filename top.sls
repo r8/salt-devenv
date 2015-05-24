@@ -11,8 +11,6 @@ base:
     - dotfiles
     - appearance 
 
-    - openbox
-
     - hipchat
     - skype
 
