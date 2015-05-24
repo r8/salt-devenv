@@ -1,6 +1,3 @@
-include:
-  - rclocal
-
 /etc/fstab:
   file.replace:
     - pattern: 'errors=remount-ro '
