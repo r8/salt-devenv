@@ -8,14 +8,11 @@ skype:
         apt-get -f install 
     - unless: dpkg -s skype 
 
-skype-autostart:
-  file.blockreplace:
-    - name: /home/r8/.config/openbox/autostart 
-    - marker_start: "# BLOCK TOP : salt managed zone : skype autostart"
-    - marker_end: "# BLOCK BOTTOM : salt managed zone : skype autostart"
-    - content: |
-        # Autostart skype
-        (sleep 10s && skype) &
-    - show_changes: True
-    - append_if_not_found: True
+/home/r8/.config/autostart/skype.desktop:                                                                                                                                      
+  file.managed:
+    - source: salt://skype/files/skype.desktop
+    - makedirs: True
+    - user: r8
+    - group: r8
+    - mode: 600 
 

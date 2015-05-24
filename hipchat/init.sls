@@ -19,14 +19,11 @@ hipchat_key:
 hipchat:
   pkg.installed
 
-hipchat-autostart:
-  file.blockreplace:
-    - name: /home/r8/.config/openbox/autostart
-    - marker_start: "# BLOCK TOP : salt managed zone : hipchat autostart"
-    - marker_end: "# BLOCK BOTTOM : salt managed zone : hipchat autostart"
-    - content: |
-        # Autostart hipchat
-        (sleep 25s && hipchat) &
-    - show_changes: True
-    - append_if_not_found: True 
+/home/r8/.config/autostart/hipchat.desktop:
+  file.managed:
+    - source: salt://hipchat/files/hipchat.desktop
+    - makedirs: True
+    - user: r8
+    - group: r8 
+    - mode: 600
 
