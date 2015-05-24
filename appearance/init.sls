@@ -1,6 +1,6 @@
 /home/r8/Pictures/Wallpapers/Abduction.png:
   file.managed:
-    - source: salt://wallpaper/files/Abduction.png
+    - source: salt://appearance/files/Abduction.png
     - makedirs: True
     - user: r8
     - group: r8
