@@ -6,6 +6,7 @@ packages:
       - screen
       - tmux
       - git
+      - subversion
       - php5-cli
       - meld
       - nfs-kernel-server
