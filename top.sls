@@ -3,8 +3,6 @@ base:
     - core 
     - java
     - ssd
-    - systemd
-    - rclocal
     - ruby
     - wine
     - r
