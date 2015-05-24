@@ -3,9 +3,7 @@ base:
     - core 
     - java
     - ssd
-    - ruby
     - wine
-    - r
 
     - zsh
     - dotfiles
@@ -17,6 +15,14 @@ base:
     - sublime-text
     - phpstorm
     - idea 
+
+    - ruby
+    - r
+    - php
+
+    - composer
     - vagrant
+    - homestead
+
     - clementine
 

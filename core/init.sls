@@ -7,7 +7,6 @@ packages:
       - tmux
       - git
       - subversion
-      - php5-cli
       - meld
       - nfs-kernel-server
       - nfs-common
