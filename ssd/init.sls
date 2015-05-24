@@ -30,9 +30,9 @@ update_grub:
     - require:
       - file: /etc/grub.d/10_linux
 
-/etc/rc.local.d/vtrim.sh:
+/etc/cron.daily/fstrim:
   file.managed:
-    - source: salt://ssd/files/vtrim.sh
+    - source: salt://ssd/files/fstrim
     - user: root
     - group: root
     - mode: 755
