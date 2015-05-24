@@ -5,6 +5,7 @@ packages:
       - mc
       - screen
       - tmux
+      - curl
       - git
       - subversion
       - meld
