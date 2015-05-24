@@ -9,7 +9,7 @@ base:
 
     - zsh
     - dotfiles
-    - wallpaper
+    - appearance 
 
     - touchpad
     - keyboard 
