@@ -11,7 +11,6 @@ base:
     - dotfiles
     - appearance 
 
-    - keyboard 
     - openbox
 
     - hipchat
