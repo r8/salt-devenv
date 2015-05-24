@@ -22,6 +22,7 @@ sublime-text-installer:
 "/home/r8/.fonts/DejaVu Sans Mono Bold for Powerline.ttf":
   file.managed:
     - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Bold for Powerline.ttf"
+    - makedirs: True
     - user: r8
     - group: r8
     - mode: 600
@@ -29,6 +30,7 @@ sublime-text-installer:
 "/home/r8/.fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf":
   file.managed:
     - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Bold Oblique for Powerline.ttf"
+    - makedirs: True
     - user: r8
     - group: r8
     - mode: 600
@@ -38,6 +40,7 @@ sublime-text-installer:
 "/home/r8/.fonts/DejaVu Sans Mono for Powerline.ttf":
   file.managed:
     - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono for Powerline.ttf"
+    - makedirs: True
     - user: r8
     - group: r8
     - mode: 600
@@ -47,6 +50,7 @@ sublime-text-installer:
 "/home/r8/.fonts/DejaVu Sans Mono Oblique for Powerline.ttf":
   file.managed:
     - source: "salt://sublime-text/files/fonts/DejaVu Sans Mono Oblique for Powerline.ttf"
+    - makedirs: True
     - user: r8
     - group: r8
     - mode: 600
@@ -62,34 +66,7 @@ dev_fonts:
 /home/r8/.config/sublime-text-3:
   file.recurse:
     - source: salt://sublime-text/files/sublime-text-3
+    - makedirs: True
     - user: r8
     - group: r8
-
-sublime_menuxml:
-  file.replace:
-    - name: /home/r8/.config/openbox/menu.xml
-    - pattern: 'geany'
-    - repl: 'subl'
-
-sublime_menuxml_title:
-  file.replace:
-    - name: /home/r8/.config/openbox/menu.xml
-    - pattern: 'Geany Text Editor'
-    - repl: 'Sublime Text Editor'
-    - require:
-      - file: sublime_menuxml
-
-sublime_rcxml:
-  file.replace:
-    - name: /home/r8/.config/openbox/rc.xml
-    - pattern: 'geany'
-    - repl: 'subl'
-    - require:
-      - file: sublime_menuxml
-
-sublime_reconfigure_openbox:
-  cmd.run:
-    - name: killall -USR1 openbox
-    - require:
-      - file: sublime_rcxml
 
