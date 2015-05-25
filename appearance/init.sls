@@ -6,15 +6,9 @@
     - group: r8
     - mode: 600
 
-set-wallpaper:
+appearance_wallpaper:
   cmd.run:
-    - name: "dbus-launch gsettings set org.gnome.desktop.background picture-uri 'file:///home/r8/Pictures/Wallpapers/Abduction.png'"
+    - name: "xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitor0/image-path --set /home/r8/Pictures/Wallpapers/Abduction.png"
     - user: r8
     - require:
       - file: /home/r8/Pictures/Wallpapers/Abduction.png 
-
-set-theme:
-  cmd.run:
-    - name: "dbus-launch gsettings set org.gnome.desktop.interface gtk-theme 'Radiance'"
-    - user: r8
-
