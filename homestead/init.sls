@@ -16,3 +16,11 @@ homestead_install:
     - repl: 'ip: "192.168.33.10"'
     - require:
       - cmd: homestead_install
+
+/home/r8/Code/homestead.app:
+  file.directory:
+    - user: r8
+    - group: r8
+    - mode: 755
+    - makedirs: True
+    
