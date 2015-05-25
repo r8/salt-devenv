@@ -6,10 +6,9 @@
     - group: r8
     - mode: 600
 
-appearance_wallpaper:
-  cmd.run:
-    - name: "xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitorLVDS1/workspace0/last-image --create -t string --set /home/r8/Pictures/Wallpapers/Abduction.png"
-    - user: r8
-    - cwd: /home/r8
+/home/r8/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+  file.replace:
+    - pattern: '<property name="last-image" type="string" value="[^"]*"/>'
+    - repl: '<property name="last-image" type="string" value="/home/r8/Pictures/Wallpapers/Abduction.png"/>'
     - require:
-      - file: /home/r8/Pictures/Wallpapers/Abduction.png 
+      - file: /home/r8/Pictures/Wallpapers/Abduction.png
