@@ -15,4 +15,4 @@ homestead_install:
     - pattern: 'ip: "192\.168\.10\.10"'
     - repl: 'ip: "192.168.33.10"'
     - require:
-      - cmd.homestead_install
+      - homestead_install
