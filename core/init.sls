@@ -11,6 +11,8 @@ packages:
       - meld
       - nfs-kernel-server
       - nfs-common
+      - xubuntu-restricted-extras
+
 
 locales:
   pkg.installed
