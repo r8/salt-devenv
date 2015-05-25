@@ -1,6 +1,6 @@
 /home/r8/.config/autostart.sh:
   file.managed:
-    - source: salt://autostart/autostart.sh
+    - source: salt://autostart/files/autostart.sh
     - makedirs: True
     - user: r8
     - group: r8
