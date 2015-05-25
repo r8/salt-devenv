@@ -21,4 +21,3 @@ fix_locale:
         locale-gen en_US.UTF-8
     - require:
       - pkg: locales
-

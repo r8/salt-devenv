@@ -9,9 +9,20 @@ vagrant:
         apt-get -f install
     - unless: dpkg-query --show vagrant | grep 1.7.2 
 
-vagrant_plugins:
+vagrant_vbguest:
   cmd.run:
     - name: |
         vagrant plugin install vagrant-vbguest
+    - user: r8
+    - require:
+      - cmd: vagrant
+    - unless: vagrant plugin list | grep vagrant-vbguest
+
+vagrant_omnibus:
+  cmd.run:
+    - name: |
         vagrant plugin install vagrant-omnibus
     - user: r8
+    - require:
+      - cmd: vagrant
+    - unless: vagrant plugin list | grep vagrant-omnibus
