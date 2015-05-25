@@ -9,6 +9,5 @@ chromium_set_default:
     - name: |
         update-alternatives --set x-www-browser /usr/bin/chromium-browser
         update-alternatives --set gnome-www-browser /usr/bin/chromium-browser
-    - user: r8
     - require:
       - pkg: chromium_packages
