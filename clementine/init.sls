@@ -1,3 +1,2 @@
 clementine:
   pkg.installed
-
