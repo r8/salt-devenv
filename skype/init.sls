@@ -15,4 +15,3 @@ skype:
     - user: r8
     - group: r8
     - mode: 600 
-
