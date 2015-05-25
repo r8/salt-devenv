@@ -8,7 +8,7 @@
 
 appearance_wallpaper:
   cmd.run:
-    - name: "xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitor0/image-path --set /home/r8/Pictures/Wallpapers/Abduction.png"
+    - name: "xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitor0/image-path --create --set /home/r8/Pictures/Wallpapers/Abduction.png"
     - user: r8
     - require:
       - file: /home/r8/Pictures/Wallpapers/Abduction.png 
