@@ -13,14 +13,12 @@ homestead_install:
 /home/r8/.homestead/Homestead.yaml:
   file.replace:
     - pattern: 'ip: "192\.168\.10\.10"'
-    - repl: 'ip: "192.168.33.10"'
-    - require:
+      repl: 'ip: "192.168.33.10"'
+      require:
       - cmd: homestead_install
-
-  file.replace:
     - pattern: "to: /home/vagrant/Code\n\n"
-    - repl: "to: /home/vagrant/Code\n    type:nfs\n\n"
-    - require:
+      repl: "to: /home/vagrant/Code\n    type:nfs\n\n"
+      require:
       - cmd: homestead_install
 
 /home/r8/Code/homestead.app:
