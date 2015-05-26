@@ -27,4 +27,5 @@ base:
     - tor-browser
 
     - clementine
+    - libreoffice
     - dropbox
