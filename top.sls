@@ -26,4 +26,4 @@ base:
     - homestead
 
     - clementine
-
+    - dropbox

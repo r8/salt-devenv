@@ -1,0 +1,10 @@
+{% set dist_id = salt['grains.get']('lsb_distrib_id') %}
+{% set dist_codename = salt['grains.get']('lsb_distrib_codename') %}
+{% set dist_release = salt['grains.get']('lsb_distrib_release') %}
+
+{% set dist = salt['grains.filter_by']({
+  'Ubuntu': {'id': 'ubuntu', 'codename': dist_codename, 'pkg_name': 'dropbox'},
+  'Debian': {'id': 'debian', 'codename': dist_codename, 'pkg_name': 'dropbox'},
+  'Fedora': {'id': 'fedora', 'release': dist_release, 'pkg_name': 'nautilus-dropbox'}
+  }, grain='os')
+%}
