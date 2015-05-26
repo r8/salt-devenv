@@ -9,14 +9,6 @@ base:
     - dotfiles
     - appearance 
 
-    - hipchat
-    - skype
-    - chromium
-
-    - sublime-text
-    - phpstorm
-    - idea 
-
     - ruby
     - r
     - php
@@ -24,6 +16,15 @@ base:
     - composer
     - vagrant
     - homestead
+
+    - sublime-text
+    - phpstorm
+    - idea
+
+    - hipchat
+    - skype
+    - chromium
+    - tor-browser
 
     - clementine
     - dropbox
