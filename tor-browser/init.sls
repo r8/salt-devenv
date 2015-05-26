@@ -1,4 +1,4 @@
-tor-browser_pkg:
+tor_pkg:
   pkgrepo.managed:
     - humanname: Tor Browser
     - name: deb http://deb.torproject.org/torproject.org vivid main
@@ -12,3 +12,10 @@ tor-browser_pkg:
   pkg.latest:
     - name: tor
     - refresh: True
+
+tor-browser:
+  pkg.latest:
+    - name: tor-browser
+    - refresh: True
+    - require:
+      - pkg: tor
