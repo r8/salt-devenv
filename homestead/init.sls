@@ -17,6 +17,12 @@ homestead_install:
     - require:
       - cmd: homestead_install
 
+  file.replace:
+    - pattern: "to: /home/vagrant/Code\n\n"
+    - repl: "to: /home/vagrant/Code\n    type:nfs\n\n"
+    - require:
+      - cmd: homestead_install
+
 /home/r8/Code/homestead.app:
   file.directory:
     - user: r8
