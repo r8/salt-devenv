@@ -27,7 +27,7 @@ update_grub:
     - require:
       - file: /etc/grub.d/10_linux
 
-/etc/cron.daily/fstrim:
+/etc/cron.hourly/fstrim:
   file.managed:
     - source: salt://ssd/files/fstrim
     - user: root
